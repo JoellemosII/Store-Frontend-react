@@ -1,0 +1,16 @@
+.container-navbar{
+    background-color: orange;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+img{
+    width: 90px;
+    height: 35px;
+    padding-left: 10px;
+}
+ul{
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
