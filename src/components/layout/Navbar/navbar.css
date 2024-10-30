@@ -13,4 +13,5 @@ ul{
     list-style: none;
     display: flex;
     gap: 3rem;
+    text-decoration: none;
 }

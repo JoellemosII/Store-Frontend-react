@@ -1,11 +1,16 @@
 import "./cardWidget.css";
-import { TiShoppingCart } from "react-icons/ti";
+import { Link } from "react-router-dom";
+import ShoppingCartTwoToneIcon from '@mui/icons-material/ShoppingCartTwoTone';
+// import { useContext } from "react";
+// import { CartContexto } from "../../../context/CartContexto";
+
 
 export const CardWidget = () => {
+    // const {cart} = useContext(CartContexto);
     return (
-        <div>
-        <TiShoppingCart />
-        <span>0</span>
-    </div>
+    <Link to = "/cart">
+        <ShoppingCartTwoToneIcon />
+        {/* <span>{cart.length}</span> */}
+    </Link>
 );
 };
