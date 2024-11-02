@@ -3,26 +3,29 @@ import { ItemListContainer } from "./components/pages/itemsListContainer/ItemLis
 import CartContainer from "./components/pages/cart/CartContainer";
 import { NotFound404 } from "./components/pages/404/NotFound404";
 import { Navbar } from "./components/layout/Navbar/Navbar";
-// import { CartContextProvider } from "./context/CartContexto";
+import { CartContextProvider } from "./context/CartContexto";
 import ItemDetailContainer from "./components/pages/ItemDetail/ItemDetailContainer";
-
+import Checkout from "./components/pages/checkout/Checkout";
+import { Toaster } from "sonner";
 
 function App() {/*Padre */
   
 
   return ( /**Hijos */
     <BrowserRouter>
-      {/* <CartContextProvider> */}
+    <Toaster />
+      <CartContextProvider>
         <Navbar/>
           <Routes>
             <Route path="/" element={<ItemListContainer />}/>
             <Route path="/category/:category" element={<ItemListContainer />}/>
             <Route path="/cart" element={<CartContainer />} />
             <Route path="/itemDetail/:id" element={<ItemDetailContainer />}/>
+            <Route path="/checkout" element={<Checkout />}/>
             <Route path="/" />
             <Route path="*" element={<NotFound404/>} />
           </Routes>
-      {/* </CartContextProvider> */}
+      </CartContextProvider>
     </BrowserRouter>
   );
 }

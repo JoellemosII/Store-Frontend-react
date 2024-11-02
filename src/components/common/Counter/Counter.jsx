@@ -1,13 +1,13 @@
 import { useState } from "react";
 
-const Counter = () => {
-const [contador, setContador] = useState(0);
+const Counter = ({ stock, agregarAlCarrito , totalInCart}) => {
+const [contador, setContador] = useState(1);
 
 const sumar = () => {
-    setContador(contador + 1);
+stock -  totalInCart > contador ? setContador(contador + 1) : alert("stock maximo");
 };
 const restar = () => {
-    setContador(contador - 1);
+contador > 1 && setContador(contador - 1);
 };
 
 return (
@@ -19,8 +19,13 @@ return (
     <button onClick={sumar}>sumar</button>
     <h2>Contador = {contador}</h2>
     <button onClick={restar}>restar</button>
+
+    <button onClick={() => agregarAlCarrito(contador)}>
+        Agregar al carrito
+    </button>
     </div>
 );
 };
 
 export default Counter;
+/**Contador */
