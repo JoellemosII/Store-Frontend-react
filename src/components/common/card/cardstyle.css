@@ -1,7 +1,9 @@
 .card{
     border: 2px solid black;
     border-radius: 5px;
-    
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+    transition: 200ms;
     width :200px;
     height :310px;
     margin-bottom: 10px;
@@ -9,4 +11,9 @@
 .card > img{
     width: 150px; 
     height:150px;
+}
+.card:hover{
+    cursor: pointer;
+    box-shadow: 0 0.3rem 0.5rem rgba(0,0,0,4);
+    translate: 0 -10px;
 }

@@ -29,9 +29,9 @@ if (items.length === 0) {
     <>
         <div className="loading">
             <Skeleton variant="rectangular" width={200} height={100} />
-            <Skeleton variant="text" width={200} height={50} />
-            <Skeleton variant="text" width={200} height={100} />
-            <Skeleton variant="text" width={200} height={100} />
+            <Skeleton variant="text" sx={{fontSize:"1rem"}} width={200} height={50} />
+            <Skeleton variant="text" sx={{}}width={200} height={100} />
+            <Skeleton variant="text" sx={{}} width={200} height={100} />
         </div>
         <div>
             <Skeleton variant="rectangular" width={200} height={100} />
