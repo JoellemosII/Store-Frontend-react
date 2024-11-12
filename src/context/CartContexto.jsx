@@ -34,7 +34,9 @@ const resetCart = () => {
 const removeById = (id) => {
     let arrayFiltrado = cart.filter((elemento) => elemento.id !== id);
     setCart(arrayFiltrado);
+    
 };
+
 
 const getTotalQuantity = (id) => {
     const product = cart.find((elemento) => elemento.id === id);
@@ -49,7 +51,7 @@ const getTotalAmount = () => {
     return total;
 };
 
-let data = {cart,addToCart,removeById,resetCart,getTotalQuantity,getTotalAmount,};
+let data = {cart,addToCart,removeById,resetCart,getTotalQuantity,getTotalAmount};
 return<CartContext.Provider value={data}>
     {children}
     </CartContext.Provider>;
