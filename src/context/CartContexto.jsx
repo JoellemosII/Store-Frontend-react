@@ -1,5 +1,5 @@
 import { createContext, useState } from "react";
-import "./cartContext.css"
+import "./cartstylecontext.css"
 export const CartContext = createContext();
 
 export const CartContextProvider = ({ children }) => {
