@@ -1,4 +1,4 @@
-import { CardWidget } from "../../common/cardWidget/CardWidget";
+import { CardWidget } from "src/components/common/cardWidget/CardWidget";
 import "./navbar.css";
 import { Link } from "react-router-dom";
 
