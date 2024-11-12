@@ -1,4 +1,4 @@
-import "../card/cardstyle.css";
+import "../Cardd/cardstyle.css";
 import { Link } from "react-router-dom";
 export const Card = ({ title, price, stock, image, id}) => {
     return (
