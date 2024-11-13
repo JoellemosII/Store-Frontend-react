@@ -1,4 +1,4 @@
-import { Card } from "../../../common/Card/Card";
+import { Card } from "../../common/Cardd/Card";
 import "../itemsListContainer/itemlist.css"
 
 const ItemList = ({ items }) => {
