@@ -5,7 +5,7 @@ import { addDoc, collection, doc, updateDoc } from "firebase/firestore";
 import { db } from "../../../firebaseConfig";
 
 const Checkout = () => {
-const {cart,getTotalAmount} = useContext(CartContext);
+const {cart,getTotalAmount,resetCart} = useContext(CartContext);
 const [orderId,setOrderId] = useState(null);
 
 const [userInfo, setUserInfo] = useState({
@@ -25,13 +25,17 @@ const funcionDelFormulario = (evento) => {
     };
 
     let refCollection = collection(db , "orders")
-    addDoc(refCollection, order).then((res)=> setOrderId(res.id));
+    addDoc(refCollection, order).then((res)=> {
+        setOrderId(res.id)
+        resetCart()
+    });
 
     let refCol = collection (db , "productos");
     order.items.forEach((item) =>{
         let refDoc = doc(refCol,item.id);
         updateDoc(refDoc, {stock:item.stock-item.quantity})
     });
+
 };
 
 
