@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import ItemList from "./ItemList";
 import { useParams } from "react-router-dom";
 import { Skeleton } from "@mui/material";
-import { db } from "/firebaseConfig";
+import { db } from "../../../firebaseConfig.js";
 import{collection, getDocs,query,where} from "firebase/firestore";
 
 export const ItemListContainer = () => {
