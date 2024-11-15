@@ -1,19 +1,49 @@
 .card{
-    border: 2px solid black;
+    border: 1px solid black;
     border-radius: 5px;
     cursor: pointer;
     transition: box-shadow 0.3s ease;
     transition: 200ms;
-    width :200px;
-    height :310px;
+    width: 290px;
+    height: 350px;
     margin-bottom: 10px;
 }
 .card > img{
-    width: 150px; 
-    height:150px;
+    width: 280px;
+    height: 260px;
 }
+
 .card:hover{
     cursor: pointer;
     box-shadow: 0 0.3rem 0.5rem rgba(0,0,0,4);
     translate: 0 -10px;
+}
+
+p{
+    text-align: center;
+    font-size: 14px;
+}
+h2{
+    font-size: 18px;
+    text-align: center
+}
+.detalle{
+    padding: 1rem;
+    width: 100%;
+    background-color:#74C3EF;
+    border:none;
+    outline: none;
+    text-transform: uppercase;
+    color: #222;
+    font-size: 12px;
+    border-radius:5px ;
+    cursor: pointer;
+    margin-bottom: 2.5px;
+}
+.detalle:hover{
+    background-color: #DCF256;
+    transition: all .3s ;
+}
+.propierity{
+    margin-top: -3px;
 }
