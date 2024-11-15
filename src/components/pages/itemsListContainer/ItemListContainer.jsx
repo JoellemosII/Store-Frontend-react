@@ -30,12 +30,13 @@ export const ItemListContainer = () => {
     if (items.length === 0) {
         return (
         <>
-            <div className="loading">
+            <div className="loading">s
                 <Skeleton variant="rectangular" width={200} height={100} />
                 <Skeleton variant="text" sx={{fontSize:"1rem"}} width={200} height={50} />
                 <Skeleton variant="text" sx={{}}width={200} height={100} />
                 <Skeleton variant="text" sx={{}} width={200} height={100} />
             </div>
+            
         </>
         );
     }
