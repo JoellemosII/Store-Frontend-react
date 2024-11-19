@@ -1,0 +1,38 @@
+.footer{
+    background-color: #74C3EF;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+.footer h2{
+    font-size: 20px;
+}
+.footer a{
+    text-decoration: none;
+    color: #1c1c1c;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.div-a, .div-b, .div-c{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.div-d{
+    text-align: center;
+    align-items: center;
+    padding-top: 6px;
+}
+.div-d img{
+    padding:3px ;
+}
+.div-d p{
+    font-size: 18px;
+}
+
+.iconos{
+    width: 25px;
+    height:25px ;
+}

@@ -1,6 +1,8 @@
 import { useState } from "react";
 import "../Counter/counterstyle.css";
 import { toast } from "sonner";
+import AddCircleOutlineOutlinedIcon  from '@mui/icons-material/AddCircleOutlineOutlined';
+import RemoveCircleOutlineOutlinedIcon from '@mui/icons-material/RemoveCircleOutlineOutlined';
 const Counter = ({ stock, agregarAlCarrito , totalInCart}) => {
 const [contador, setContador] = useState(1);
 
@@ -18,9 +20,9 @@ contador > 1 && setContador(contador - 1);
 return (
     <>
         <div className="counter">
-            <button onClick={restar}>restar</button>
+            <button><RemoveCircleOutlineOutlinedIcon  onClick={restar}/></button>
             <h2>Unidades = {contador}</h2>
-            <button onClick={sumar}>sumar</button>
+            <button><AddCircleOutlineOutlinedIcon onClick={sumar} /></button>
         </div>
 
         <div className="btnAdd">

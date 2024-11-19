@@ -18,12 +18,14 @@
     box-shadow: 0 0.3rem 0.5rem rgba(0,0,0,4);
     translate: 0 -10px;
 }
-
+h2{
+    align-items: center;
+}
 p{
     text-align: center;
     font-size: 14px;
 }
-h2{
+h3{
     font-size: 18px;
     text-align: center
 }
