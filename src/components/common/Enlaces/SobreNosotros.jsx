@@ -2,6 +2,8 @@
 
 export const SobreNosotros = () => {
 return (
-    <div>SobreNosotros</div>
+    <div>SobreNosotros
+        <p>hola</p>
+    </div>
 )
 }
