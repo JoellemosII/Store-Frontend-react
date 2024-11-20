@@ -1,5 +1,5 @@
 import { Card } from "../../common/Cardd/Card";
-import "../ItemListContainer/itemiiststyle.css";
+import "../ItemListContainer/itemliststyle.css";
 const ItemList = ({ items }) => {
 return (
     <>
